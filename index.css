@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #161D2B;
+  color: white;
+}
+
+input, select, textarea {
+  background-color: #1F2937 !important;
+  border-color: #374151 !important;
+  color: white !important;
+}
+
+input[type="checkbox"] {
+  background-color: #374151 !important;
+}
+
+button {
+  background-color: #1F2937;
+  border-color: #374151;
+}
+
+.modal-content {
+  background-color: #1F2937;
+}
+
+@media print {
+  nav, button, select, input[type="checkbox"], .search-icon {
+    display: none;
+  }
+  
+  body {
+    background: #ffffff;
+    color: black;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #374151;
+    padding: 8px;
+    color: black;
+  }
+  
+  th {
+    background-color: #1F2937;
+    color: white;
+  }
+}
